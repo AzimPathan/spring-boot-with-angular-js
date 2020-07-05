@@ -1,0 +1,33 @@
+package com.azimpathan.demo.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.azimpathan.demo.model.Person;
+
+@Controller
+public class HomeController {
+	
+	List<Person> list = new ArrayList<Person>();
+	
+	@RequestMapping("/")
+	public String homepage()
+	{
+		Person p1 = new Person("Azim","Pathan");
+		Person p2 = new Person("Harry","Potter");
+		Person p3 = new Person("Spring","Boot");
+		list.add(p1);
+		list.add(p2);
+		list.add(p3);
+		return "index";
+	}
+	
+	@RequestMapping("/person")
+	public List<Person> getPerson()
+	{
+		return list;
+	}
+}

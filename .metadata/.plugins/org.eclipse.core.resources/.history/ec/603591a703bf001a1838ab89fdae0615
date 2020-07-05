@@ -1,0 +1,6 @@
+package com.azimpathan.demo.controller;
+
+@RestController
+public class DataController {
+
+}

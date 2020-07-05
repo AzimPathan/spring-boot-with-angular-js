@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title> Spring Boot with AngularJS </title>
+</head>
+<body>
+	<h1> Welcome to Spring Boot with AngularJS </h1>
+	
+	<div ng-app="app">
+		<div ng-controller="getcontroller">
+			<ul>
+				<li ng-repeat="person in response"> {{person.firstName + " " + person.lastName}} </li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

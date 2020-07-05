@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+	<title> Spring Boot with AngularJS </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="/js/controller.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+	<h1> Welcome to Spring Boot with AngularJS </h1>
+	
+	<div ng-app="app">
+		<div ng-controller="getcontroller">
+			<button id="btn-id" type="button" class="btn btn-primary" ng-click="getfunction()">Get All Person</button>
+			<ul>
+				<li ng-repeat="person in response"> {{person.firstName + " " + person.lastName}} </li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

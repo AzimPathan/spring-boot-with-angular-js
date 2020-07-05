@@ -1,0 +1,21 @@
+package com.azimpathan.demo.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.azimpathan.demo.model.Person;
+
+@RestController
+public class DataController {
+
+	List<Person> list = new ArrayList<Person>();
+	
+	@RequestMapping("/person")
+	public List<Person> getPerson()
+	{
+		return list;
+	}
+}

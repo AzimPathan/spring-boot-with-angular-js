@@ -1,0 +1,5 @@
+package com.azimpathan.demo.controller;
+
+public class HomeController {
+
+}
