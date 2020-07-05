@@ -1,0 +1,1 @@
+Demo project in Spring Boot with Angular JS
